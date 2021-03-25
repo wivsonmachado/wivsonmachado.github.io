@@ -10,9 +10,9 @@ html, body{
 }
 
 .box-principal{
-    border: 1px solid #ffffff;
+    border: 0.8px solid #ffffff6c;
     border-radius: 0px 0px 10px 10px;
-    opacity: 0.85;
+    opacity: 0.90;
 }
 
 .opacidade{
@@ -35,6 +35,12 @@ a#link-contato:hover{
     color: transparent;
     -webkit-text-stroke: 2px rgb(255, 255, 255);    
 }
+
+.hr3 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);  
+  }
 
 @keyframes color-change {
     0% { color: transparent;
