@@ -5,3 +5,43 @@
 .shadow-nav{
     box-shadow: 0px 3px 6px #797979;
 }
+
+.box-principal{
+    margin-top: 10vh;
+    border: 1px solid #ffffff;
+}
+
+.opacidade{
+    opacity: 0.75;
+}
+.img-width{
+    width: auto;
+    padding: 10px;
+    opacity: 0.85;
+}
+
+/*.fonte-principal{
+    font: normal normal bold 2vw Roboto;
+}
+
+.fonte-sub{
+    font: normal normal bold 1vw Roboto;
+}*/
+
+.icones{
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);    
+}
+.icones:hover{
+    -webkit-text-stroke: 1px rgb(41, 79, 202);    
+}
+
+a:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);    
+}
+
+}
+.rodape{
+    border-radius: 0px 0px 10px 10px;
+}
