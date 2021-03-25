@@ -10,28 +10,27 @@
     <title>Wivson Machado</title>
 </head>
 <body class="body background-gradient">
-    <nav class="navbar navbar-expand-lg background-gradient shadow-nav">
-        <div class="navbar-nav ml-auto">
-           <i class="fas fa-bars fa-2x text-white"></i> 
-        </div>
-    </nav>
+
     <div class="container d-flex opacidade text-white h-100">
         <div class="row box-principal align-self-center" >
             <div class="col-12 col-md-4 pl-0 pr-0">
                 <img class="img-fluid img-width" src="images/Foto_perfil@0,5x-op85.jpg.png">
             </div>
-            <div class="col-10 col-md-7 justify-content-center position-relative">
+            <div class="col-10 col-md-7 justify-content-center">
                 <p class="h3 d-flex justify-content-center pt-4">WIVSON MACHADO</p>
                 <p class="h4 d-flex justify-content-center">Apaixonado por tecnologia, café, fotografia e desafios.</p>
-                <div class="row position-absolute justify-content-center fixed-bottom py-2">
+                <div class="row bg-danger" style="align-self: center;">
+                    <span><a href="#projetos">Projetos</a></span>
+                </div>
+                <div class="row justify-content-center py-2">
                     <div class="col-2 col-md-1 d-flex ">
-                        <a href="https://github.com/wivsonmachado"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="https://github.com/wivsonmachado" id="link-contato"><i class="fab fa-github fa-2x"></i></a>
                     </div>
                     <div class="col-2 col-md-1 d-flex justify-content-center">
-                        <a href="https://twitter.com/wivson_machado"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://twitter.com/wivson_machado" id="link-contato"><i class="fab fa-twitter fa-2x"></i></a>
                     </div>
                     <div class="col-2 col-md-1 d-flex justify-content-center">
-                        <a href="mailto:wivsonfrota@gmail.com"><i class="fas fa-at fa-2x"></i></a>   
+                        <a href="mailto:wivsonfrota@gmail.com" id="link-contato"><i class="fas fa-at fa-2x"></i></a>   
                     </div>
                 </div>
             </div>
@@ -43,12 +42,23 @@
             </div>
         </div>
     </div>
-    <div class="container h-100 bg-danger">
+    <div class="container h-100 text-white"  id="projetos">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center pt-5">
-                <h1 class="display-2">PROJETOS</h1>
+            <div class="col-12 d-flex justify-content-center my-5 pt-5">
+                <h1 class="display-3">PROJETOS</h1>
             </div>
-
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card text-secondary">
+                    <img class="card-img-top" src="images/projetos/Gerador.gif" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Gerador de senhas</h5>
+                      <p class="card-text">Gerador de senhas criado com JavaScript, HTML5 e CSS3. Crie senhas aleatórias e seguras, o app conta com código que mede a força da senha gerada.</p>
+                      <a href="https://wivsonmachado.github.io" class="btn btn-primary">Visitar</a>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
 </body>

@@ -12,10 +12,11 @@ html, body{
 .box-principal{
     border: 1px solid #ffffff;
     border-radius: 0px 0px 10px 10px;
+    opacity: 0.85;
 }
 
 .opacidade{
-    opacity: 0.75;
+    opacity: 1;
 }
 .img-width{
     width: auto;
@@ -27,10 +28,10 @@ html, body{
     animation: color-change 5s infinite;
 }
 
-a{
+a#link-contato{
     color: white;
 }
-a:hover{
+a#link-contato:hover{
     color: transparent;
     -webkit-text-stroke: 2px rgb(255, 255, 255);    
 }
