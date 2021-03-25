@@ -28,20 +28,41 @@
     font: normal normal bold 1vw Roboto;
 }*/
 
-.icones{
+/*.icones{
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);    
 }
+
 .icones:hover{
+    color: transparent;
     -webkit-text-stroke: 1px rgb(41, 79, 202);    
+}*/
+
+.icones{
+    animation: color-change 5s infinite;
 }
 
+a{
+    color: white;
+}
 a:hover{
     color: transparent;
     -webkit-text-stroke: 2px rgb(255, 255, 255);    
 }
 
-}
 .rodape{
     border-radius: 0px 0px 10px 10px;
 }
+
+@keyframes color-change {
+    0% { color: transparent;
+        -webkit-text-stroke: 1px #FC5C7D; }
+    25% { color: transparent;
+        -webkit-text-stroke: 1px #FC5C7D;     }
+    50% { color: transparent;
+        -webkit-text-stroke: 1px #6A82FB;     }
+    75% { color: transparent;
+            -webkit-text-stroke: 1px #6A82FB;     }
+    100% { color: transparent;
+            -webkit-text-stroke: 1px #FC5C7D;     }
+  }
