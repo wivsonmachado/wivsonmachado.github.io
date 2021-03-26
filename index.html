@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="bootstrap/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <script src="bootstrap/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Wivson Machado</title>
 </head>
 <body class="body background-gradient">
     <nav class="navbar navbar-expand-lg fixed-top background-gradient shadow-nav">
         <div class="navbar-nav ml-auto">
-           <i class="fas fa-bars fa-2x text-white"></i> 
+           <i class="fas fa-bars fa-2x text-white" data-toggle="dropdown" id="dropdownMenuLink"></i>
+
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+          </div>
         </div>
     </nav>
     <div class="container d-flex opacidade text-white h-100">
