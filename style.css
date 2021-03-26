@@ -10,9 +10,9 @@ html, body{
 }
 
 .box-principal{
-    border: 0.8px solid #ffffff6c;
-    border-radius: 0px 0px 10px 10px;
-    opacity: 0.90;
+    border: 1px solid #ffffff6c;
+    border-radius: 0px 0px 15px 0px;
+    opacity: 1;
 }
 
 .opacidade{
@@ -20,8 +20,8 @@ html, body{
 }
 .img-width{
     width: auto;
-    padding: 10px;
     opacity: 0.85;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .icones{
@@ -59,7 +59,7 @@ a#link-contato:hover{
 	box-shadow:inset 0px 1px 0px 0px #ffffff00;
 	background:linear-gradient(to bottom, #ffffff00 5%, #f6f6f600 100%);
 	background-color:#ffffff00;
-	border-radius:8px;
+	border-radius: 0px 8px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
