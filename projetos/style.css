@@ -1,0 +1,85 @@
+/*#container{
+    width: 25%;
+    height: 360px;
+    background-color:gray;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#titulo{
+    padding: 20px;
+    color: tomato;
+    text-align: center;
+}
+
+
+ form{
+     display: inline-block;
+ }
+
+ form#letras{
+     text-align: left;
+     padding-right: 40px;
+ }
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#alerta{
+    color:gold;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: forestgreen;
+    
+}
+
+#result{
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+#score{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    align-content: center;
+    color:whitesmoke;
+    font-weight: 600;
+}*/
+
+.progress-bar-score{
+    --progress: 0;
+    height: 30px;
+    background-color:gray;
+    display: flex;
+  }
+  
+  .progress-bar-score::before{
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 45%);
+    transition: all 1s ease;
+  }
+
+
+/*#infos{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}*/
