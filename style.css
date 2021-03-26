@@ -33,7 +33,7 @@ a#link-contato{
 }
 a#link-contato:hover{
     color: transparent;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);    
+    -webkit-text-stroke: 2px rgba(168,85,137,1);    
 }
 
 .hr3 {
@@ -54,3 +54,29 @@ a#link-contato:hover{
     100% { color: transparent;
             -webkit-text-stroke: 1px #FC5C7D;     }
   }
+
+  .btn-wi {
+	box-shadow:inset 0px 1px 0px 0px #ffffff00;
+	background:linear-gradient(to bottom, #ffffff00 5%, #f6f6f600 100%);
+	background-color:#ffffff00;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff00;
+}
+.btn-wi:hover {
+    color:rgba(168,85,137,1)
+	/*background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;*/
+}
+.btn-wi:active {
+	position:relative;
+	top:1px;
+}
