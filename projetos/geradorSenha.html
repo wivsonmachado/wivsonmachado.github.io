@@ -10,62 +10,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container" style="background-color: gray; color: whitesmoke;">
-    <div>
-        <h4 class="display-4 d-flex justify-content-center" style="color: tomato;">Crie sua senha</h4>
-    </div>
-<div class="d-flex justify-content-center">
-    <div class="col-8">
-        <p class="d-flex justify-content-center">Escolha a quantidade de caracteres:</p>
-    <div class="form-group">
-        <input type="range" min="8" max="30" value="8" class="form-control-range" id="sliderRange" oninput="sizeNumber()">
-        <span id="saida" class="d-flex justify-content-center h3 text-white">8</span></p>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="lower">
-                <label class="form-check-label" for="lower">Minúsculas</label>
+    <div class="container mt-5" style="max-width: 420px; background-color: gray; color: whitesmoke;">
+        <div>
+            <div class="row justify-content-center">
+                <h4 class="display-4 text-center" style="color: tomato;">Crie sua senha</h4>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="upper">
-                <label class="form-check-label" for="upper">Maiúsculas</label>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                    <p class="d-flex justify-content-center">Escolha a quantidade de caracteres:</p>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="numeros">
-                <label class="form-check-label" for="numeros">Números</label>
+            <div class="row justify-content-centerr">
+                <div class="col-12 col-md-12 form-group">
+                    <input type="range" min="8" max="30" value="8" class="form-control-range" id="sliderRange" oninput="sizeNumber()">
+                    <span id="saida" class="d-flex justify-content-center h3 text-white">8</span>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="simbolos">
-                <label class="form-check-label" for="simbolos">Símbolos</label>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="lower">
+                        <label class="form-check-label" for="lower">Minúsculas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="upper">
+                        <label class="form-check-label" for="upper">Maiúsculas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="numeros">
+                        <label class="form-check-label" for="numeros">Números</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="simbolos">
+                        <label class="form-check-label" for="simbolos">Símbolos</label>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 d-flex justify-content-end">
+                    <div class="btn-group-vertical">
+                        <button class="btn btn-success d-flex mb-1" onclick="botaoGerar()">Gerar Senha</button>
+                        <button class="btn btn-success" onclick="copyPass(); limpaAlerta()">Copiar</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="row justify-content-center">
+                    <span><p id="result" class="h4 text-center">&nbsp;</p></span>
             </div>
-        </div>
-        <div class="col d-flex p-1 flex-row-reverse">
-            <div class="btn-group-vertical">
-                <button class="btn btn-success d-flex mb-1" onclick="botaoGerar()">Gerar Senha</button>
-                <button class="btn btn-success" onclick="copyPass(); limpaAlerta()">Copiar</button>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
-    <div class="row justify-content-center display-4">
-        <span id="result">&nbsp;</span>
-    </div>
-    <div>
-        <div id="statusbar" class="progress-bar-score p-0">&nbsp;</div>
-    <div class="row alerts" >
-        <div class="col p-3">
-            <span class="h6" id="score">&nbsp;</span>
-        </div>
-        <div class="col d-flex justify-content-end">
-            <span class="h4" style="color: gold;" id="alerta"></span>
-        </div>
-    </div>
-        
-    </div>
+            <div>
+                <div id="statusbar" class="progress-bar-score">
+                    &nbsp;
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-6">
+                        <p class="h5" id="score">&nbsp;</p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <p class="h5 text-right" style="color: gold;" id="alerta"></p>
+                    </div>
+                </div>
 
-</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
