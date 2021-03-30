@@ -130,7 +130,17 @@ a#link-contato:hover{
 }
 
 @media screen and (max-width: 767px) {
+
+	.box-principal{
+		border: none;
+	}
 	.esconder-elemento{
 	  display: none;
+	}
+	.img-width{
+		width: auto;
+		opacity: 1;
+		border-radius: 0px;
+		border: 1px solid rgba(255, 255, 255, 0.541);
 	}
   }
