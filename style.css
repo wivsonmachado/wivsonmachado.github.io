@@ -12,7 +12,7 @@ html, body{
 .box-principal{
     border: 2px solid #ffffff6c;
     border-radius: 15px 15px 15px 15px;
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .opacidade{
@@ -20,7 +20,7 @@ html, body{
 }
 .img-width{
     width: auto;
-    opacity: 0.85;
+    opacity: 1;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -105,4 +105,13 @@ a#link-contato:hover{
 .btn-wi-card:active {
 	position:relative;
 	top:1px;
+}
+
+.citacao{
+	position: relative;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: auto;
+	text-align: center;
 }
