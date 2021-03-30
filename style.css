@@ -1,6 +1,19 @@
 html, body{
     height: 100%;
 }
+.progress-bar-score{
+    --progress: 0;
+    height: 30px;
+    background-color:gray;
+    display: flex;
+  }
+  
+  .progress-bar-score::before{
+    content: "";
+    width: calc(var(--progress) * 1%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 45%);
+    transition: all 1s ease;
+  }
 .background-gradient{
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,12,64,1), rgba(168,85,137,1));
 }
@@ -115,3 +128,9 @@ a#link-contato:hover{
 	height: auto;
 	text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+	.esconder-elemento{
+	  display: none;
+	}
+  }
